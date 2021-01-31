@@ -69,7 +69,7 @@ def get_filters():
     while getmonth == "" and (getOpts == "Month" or getOpts == "Both"):
         getmonth = input('\nWhich *month* would you like to explore? All, None, January, February, ... , June?\n[All, JAN, FEB, MAR, APR, MAY, JUN]\n').title()
         #allow the users to be lazy or creative, up to a point
-        if getmonth == "All" or getmonth == "None" or getmonth == "Na":
+        if getmonth == "All" or getmonth == "None" or getmonth == "Na" or "N/A":
             month = "All"
         elif getmonth == "January" or getmonth == "Jan":
             month = 0
