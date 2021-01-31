@@ -24,7 +24,7 @@ def get_filters():
         (str) month - name of the month to filter by, or "all" to apply no month filter
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
-    print('*'*50+'\n **Hello, bruh! Let\'s explore some US bikeshare data!**\n'+'*'*50 + '\n\n')
+    print('*'*50+'\n **Hello! Let\'s explore some US bikeshare data!**\n'+'*'*50 + '\n\n')
     # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
 
     #prime the input loop
@@ -47,7 +47,7 @@ def get_filters():
             getcity = ""
             print("\nYour response was not understood. Please check your spelling, or use the given prompts.\n")
 
-    print('\nCITY- You chose: {} \n'.format(city))
+    print('\nCITY- You selected: {} \n'.format(city))
 
 
     # get user input for which filter to use:
@@ -69,7 +69,7 @@ def get_filters():
     while getmonth == "" and (getOpts == "Month" or getOpts == "Both"):
         getmonth = input('\nWhich *month* would you like to explore? All, None, January, February, ... , June?\n[All, JAN, FEB, MAR, APR, MAY, JUN]\n').title()
         #allow the users to be lazy or creative, up to a point
-        if getmonth == "All" or getmonth == "None" or getmonth == "Na":
+        if getmonth == "All" or getmonth == "None" or getmonth == "Na" or "N/A":
             month = "All"
         elif getmonth == "January" or getmonth == "Jan":
             month = 0
@@ -221,7 +221,7 @@ def time_stats(df, month, day):
 def station_stats(df):
     """Displays statistics on the most popular stations and trip."""
 
-    print('\nCalculating The Most Popular Stations and Trip...\n')
+    print('\nCalculating The Most Popular Stations and Trips...\n')
     start_time = time.time()
 
     # display most commonly used start station
