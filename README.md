@@ -5,7 +5,7 @@ January 2021
 Bikeshare Analytics
 
 ### Description
-Describe what your project is about and what it does
+This project allows the user to input follow a menu to retrieve information about bikeshare programs in various cities.
 
 ### Files used
 Include the files used
