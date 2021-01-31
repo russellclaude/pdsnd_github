@@ -47,7 +47,7 @@ def get_filters():
             getcity = ""
             print("\nYour response was not understood. Please check your spelling, or use the given prompts.\n")
 
-    print('\nCITY- You chose: {} \n'.format(city))
+    print('\nCITY- You selected: {} \n'.format(city))
 
 
     # get user input for which filter to use:
